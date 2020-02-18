@@ -10,25 +10,25 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 subject = input('Enter the keyword that you want to search ')
 list = []
-neu=0
-pos=0
-neg=0
-c =0
+neutral=0
+positive=0
+negative=0
+count =0
 for tweet in tweepy.Cursor(api.search, q=subject).items(1000):
     print(tweet.text)
     analysis = TextBlob(tweet.text)
     print(analysis.sentiment)
     list.append(analysis.sentiment.polarity)
-    c+=1
+    count+=1
 print ("Average Polarity" + str(mean(list)) )   
 for i in list:
     if i==0.0:
-       neu+=1
+       neutral+=1
     if i>0.0:
-       pos+=1
+       positive+=1
     if i<0.0:
-       neg+=1
-print ("Total Neutral :" + str(neu))
-print ("Total Positive :" + str(pos))
-print("Total Negative :" + str(neg))
-print("Total Tweets Searched" + str(c))
+       negative+=1
+print ("Total Neutral :" + str(neutral))
+print ("Total Positive :" + str(positive))
+print("Total Negative :" + str(negative))
+print("Total Tweets Searched" + str(count))
