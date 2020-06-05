@@ -13,7 +13,7 @@ def speakText(command):
 class MyFrame(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, None,
-            pos=wx.DefaultPosition, size=wx.Size(425, 100),
+            pos=(750,300), size=wx.Size(425, 100),
             style=wx.MINIMIZE_BOX | wx.SYSTEM_MENU | wx.CAPTION |
              wx.CLOSE_BOX | wx.CLIP_CHILDREN,
             title="Twitter Sentiment Analysis")
@@ -22,7 +22,7 @@ class MyFrame(wx.Frame):
         lbl = wx.StaticText(panel,
         label="Enter the keyword that you want to search")
         my_sizer.Add(lbl, 0, wx.ALL, 5)
-        self.txt = wx.TextCtrl(panel, style=wx.TE_PROCESS_ENTER,size=(400,30))
+        self.txt = wx.TextCtrl(panel, style=wx.TE_PROCESS_ENTER,size=(400,20))
         self.txt.SetFocus()
         self.txt.Bind(wx.EVT_TEXT_ENTER, self.OnEnter)
         my_sizer.Add(self.txt, 0, wx.ALL, 5)
