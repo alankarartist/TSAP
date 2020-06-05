@@ -15,4 +15,4 @@ pip install pyttsx3
 pip install PyAudio
 ```
 1. After installing tweepy go to [Twitter Developer](https://developer.twitter.com/en) and apply for Twitter API to get started.
-2. If there is problem in installing PyAudio, then go to the [link](https://www.lfd.uci.edu/~gohlke/pythonlibs/) and download the package file according to the system requiremnts and then try to install it.
+2. If there is problem in installing PyAudio, then go to the [link](https://www.lfd.uci.edu/~gohlke/pythonlibs/) and download the package file according to the system requirements and then try to install it.
