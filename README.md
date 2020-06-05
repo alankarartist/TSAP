@@ -1,5 +1,6 @@
-# Twitter-Sentiment Analysis using Python
+# TSAP
 
+TSAP (Twitter-Sentiment Analysis using Python)
 A script which search the most recent 1000 tweets that contain the desired keyword(celebrity, famous personality or any noun). The script then analyses each and every tweet and gives it a Float number between -1 to 1. At the end we get the total neutral, negative and positive tweets related to the keyword, as well as the mean.
 
 ## Installation
