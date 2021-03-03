@@ -65,7 +65,7 @@ class MyFrame(wx.Frame):
                 print(analysis.sentiment)
                 list.append(analysis.sentiment.polarity)
                 count+=1
-            print ("Average Polarity" + str(mean(list)) )   
+            print ("Average Polarity: " + str(mean(list)) )   
             for i in list:
                 if i==0.0:
                    neutral+=1
@@ -78,11 +78,11 @@ class MyFrame(wx.Frame):
             print ("Total Positive: " + str(positive))
             speakText("Total Positive: " + str(positive))
             print("Total Negative: " + str(negative))
-            speakText("Total Negative :" + str(negative))
+            speakText("Total Negative: " + str(negative))
             print("Total Tweets Searched: " + str(count))
             speakText("Total Tweets Searched: " + str(count))
 
 if __name__ == "__main__":
-    app =wx.App(True)
+    app = wx.App(True)
     frame = MyFrame()
     app.MainLoop()
