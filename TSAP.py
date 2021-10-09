@@ -55,10 +55,10 @@ class MyFrame(wx.Frame):
             subject = input
             speakText(subject)
             list = []
-            neutral=0
-            positive=0
-            negative=0
-            count =0
+            neutral = 0
+            positive = 0
+            negative = 0
+            count = 0
             for tweet in tweepy.Cursor(api.search_tweets, q=subject).items(1000):
                 print(tweet.text)
                 analysis = TextBlob(tweet.text)
