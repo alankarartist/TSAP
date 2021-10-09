@@ -59,7 +59,7 @@ class MyFrame(wx.Frame):
             positive=0
             negative=0
             count =0
-            for tweet in tweepy.Cursor(api.search, q=subject).items(1000):
+            for tweet in tweepy.Cursor(api.search_tweets, q=subject).items(1000):
                 print(tweet.text)
                 analysis = TextBlob(tweet.text)
                 print(analysis.sentiment)
