@@ -25,3 +25,9 @@ pip install PyAudio
 
 1. First change the lines 48 to 51 by providing Consumer Key, Consumer Secret, Access Token and Access Token Secret.
 2. There are two ways to give input - i) Write the keyword in given space and click Enter. ii) Click on Enter, provide keyword by voice command and then again click on Enter.
+
+## Contributor
+
+<a href="https://github.com/alankarartist/TSAP/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=alankarartist/TSAP" />
+</a>
